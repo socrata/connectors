@@ -5,6 +5,6 @@ ga_tracking_code: "REPLACEME"
 
 subsite: dev
 title: labs-template
-root: "/soda-ruby"
+root: "/labs-template"
 icon: fa fa-file-text
 github_repo: https://github.com/socrata/labs-template
