@@ -1,6 +1,5 @@
-<li class="nav-header dropdown-header">Examples</li>
 {% for page in site.pages %}
-  {% if page.type == 'example' %}
+  {% if page.type == 'connector' %}
     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
   {% endif %}
 {% endfor %}
