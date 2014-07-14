@@ -1,0 +1,43 @@
+---
+layout: default
+title: Socrata Connectors
+bodyclass: homepage
+---
+
+<h1>Socrata Connectors</h1>
+
+<p>To help you get started, we've provided helpful libraries for a number of different languages:</p>
+
+<ul class="repositories">
+  {% for conn in site.pages %}
+    {% if conn.type == 'connector' %}
+      {% if conn.platform == 'fme' %}
+        {% capture platform_link %}<a href="http://www.safe.com">Safe FME</a>{% endcapture %}
+      {% elsif conn.platform == 'kettle' %}
+        {% capture platform_link %}<a href="http://community.pentaho.com/projects/data-integration/">Pentaho Kettle</a>{% endcapture %}
+      {% endif %}
+      <li class="component repo">
+      <h3 class="name"><a href="{{ conn.external_url }}"><i class="fa fa-fw {{ conn.icon }}"></i>{{ conn.title }}</a></h3>
+
+        <ul class="contributors"></ul>
+
+        <div class="body">
+          <p class="description">{{ conn.description }}</p>
+
+          <ul class="meta">
+            {% if platform_link %}<li><em>Platform:</em> {{ platform_link }}</li>{% endif %}
+          </ul>
+
+          <div class="links btn-group">
+            {% if conn.docs_url %}<button class="btn btn-default"><a href="{{ conn.docs_url }}" class="docs"><i class="fa fa-book"></i> Documentation</a></button>{% endif %}
+            {% if conn.download_url %}<button class="btn btn-default"><a href="{{ conn.download_url }}" class="docs"><i class="fa fa-cloud-download"></i> Download</a></button>{% endif %}
+            {% if conn.bugs_url %}<button class="btn btn-default"><a href="{{ conn.bugs_url }}" class="issues"><i class="fa fa-exclamation-circle"></i> Issues</a></button>{% endif %}
+          </div>
+        </div>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<script type="text/javascript" charset="utf-8" src="/js/github.js"></script>
+
