@@ -1,9 +1,9 @@
-destination: "public/fme-connectors"
+destination: "public/connectors"
 exclude: [Gemfile, Gemfile.lock, .rvmrc, public]
 
 ga_tracking_code: "REPLACEME"
 
 title: Socrata Connectors
-root: "/fme-connectors"
+root: "/connectors"
 icon: fa fa-refresh
-github_repo: https://github.com/socrata/fme-connectors
+github_repo: https://github.com/socrata/connectors
