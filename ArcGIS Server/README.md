@@ -16,4 +16,4 @@ This example workflow extracts data from ArcGIS Server and pushes it to Socrata.
 automatically
 6. Click the "Query (GET)" button
 
-Then copy the URL fro your browser's URL bar
+Then copy the URL for your browser's URL bar
