@@ -12,6 +12,8 @@ This example workflow extracts data from ArcGIS Server and pushes it to Socrata.
 2. Click on "Query" at the bottom of the layer's entry in the ArcGIS Services Directory. Ex. https://gisrevprxy.seattle.gov/ArcGIS/rest/services/ext/WM_CityGISLayers/MapServer/33
 3. Under "Where" enter "1=1" (or whatever more specific query you want for your export)
 4. Under "Format" select "JSON"
-5. Click the "Query (GET)" button
+5. If you want all the feature service attributes be sure to add '*' to the Output Fields. The Esri Json reader will pick these up
+automatically
+6. Click the "Query (GET)" button
 
 Then copy the URL fro your browser's URL bar
