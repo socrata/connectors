@@ -2,13 +2,13 @@
 
 This workflow demonstrates publishing geospatial data read into FME (in this example from a Shapefile containing points) to an existing Socrata Geospatial Dataset (a.k.a. Mondara dataset).
 
-[View preview of workflow](https://github.com/socrata/fme-connectors/raw/master/Templates/Geospatial Publisher/)
+[View preview of workflow](https://github.com/socrata/connectors/raw/geospatial-publisher/Geospatial%20Publisher/geospatial_publisher_preview.png)
 
 ## Quickstart
 
 Follow these steps to get the example workflow working to update a dataset. Once you have it working you can swap out the FME Reader with a reader for the geospatial data you wish to publish.
 
-1. [Download the workflow](https://github.com/socrata/fme-connectors/raw/master/Templates/Geospatial Publisher/socrata_geospatial_publisher.fmwt) and open it in FME Desktop.
+1. [Download the workflow](https://github.com/socrata/connectors/raw/geospatial-publisher/Geospatial%20Publisher/socrata_geospatial_publisher.fmwt) and open it in FME Desktop.
 
 2. Create a new Geospatial Dataset on your Socrata data portal. Refer to [this guide](https://support.socrata.com/hc/en-us/articles/202950488-Host-geospatial-files-using-Socrata-Mondara) for information on Geospatial datasets.
 
