@@ -1,0 +1,164 @@
+2014-11-24 14:18:05|   0.1|  0.1|INFORM|FME 2014 SP4 Beta (20140905 - Build 14411 - macosx)
+2014-11-24 14:18:05|   0.1|  0.0|INFORM|FME_HOME is '/Applications/FME 2014/Engine/'
+2014-11-24 14:18:05|   0.1|  0.0|INFORM|FME Professional Edition (node locked-crc)
+2014-11-24 14:18:05|   0.1|  0.0|INFORM|Serial Number: BDG8FR-GYA5-13LP
+2014-11-24 14:18:05|   0.1|  0.0|INFORM|Temporary License: 158 days left.
+2014-11-24 14:18:05|   0.1|  0.0|INFORM|Machine host name is: Adrians-MacBook-Pro.local
+2014-11-24 14:18:05|   0.1|  0.0|INFORM|START - ProcessID: 47579, peak process memory usage: 0 kB, current process memory usage: 0 kB
+2014-11-24 14:18:05|   0.1|  0.0|INFORM|FME Configuration: Command line arguments are `/Applications/FME 2014/Engine//bin/fme' `/Users/adrian/Dropbox/Socrata_s/projects/data_integration/fme_integration/connectors/Socrata to Socrata/wb-xlate-1416867485430_47567' `LOG_STANDARDOUT' `YES' `LogCount' `/tmp/wb-xlate-counts-1416867485431_47567'
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|Shared directories for formats are : /Users/adrian/Library/Application Support/FME/Formats;/Applications/FME 2014/Engine/datasources
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|Shared directories for transformers are : /Users/adrian/Library/Application Support/FME/Transformers;/Applications/FME 2014/Engine/transformers;/Users/adrian/Library/Caches/Safe Software/FME/FME Store/Transformers
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|Shared directories for coordinate systems are : /Users/adrian/Library/Application Support/FME/CoordinateSystems
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|Shared directories for coordinate system exceptions are : /Users/adrian/Library/Application Support/FME/CoordinateSystemExceptions
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|Shared directories for coordinate system grid overrides are : /Users/adrian/Library/Application Support/FME/CoordinateSystemGridOverrides
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|Shared directories for CS-MAP transformation exceptions are : /Users/adrian/Library/Application Support/FME/CsmapTransformationExceptions
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|Shared directories for transformer categories are : /Users/adrian/Library/Application Support/FME/TransformerCategories
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|Mapping File Identifier is: socrata_filter_to_socrata
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: Reader Keyword is `CSV_1'
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: Writer Keyword is `MULTI_WRITER'
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `MULTI_WRITER_DEF'
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: Reader type is `CSV'
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: Current working directory is `/Users/adrian/Dropbox/Socrata_s/projects/data_integration/fme_integration/connectors/Socrata to Socrata'
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: Temporary directory is `/tmp'
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: FME_HOME is `/Applications/FME 2014/Engine/'
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: FME_MF_DIR is '/Users/adrian/Dropbox/Socrata_s/projects/data_integration/fme_integration/connectors/Socrata to Socrata/'
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'socrata_to_socrata.fmw'
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2014 SP4'
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|Operating System: Darwin 13.4.0 x86_64
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Platform: macosx
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|The memory allocator being used by FME is : `/usr/lib/system/libsystem_malloc.dylib'
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|Locale: UTF-8
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: Process limit is 8192 MB (out of 8192 MB physical memory and 17592186044415 MB address space)
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: Start freeing memory when process usage exceeds 4915 MB of memory or 17592186043816 MB of address space
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: Stop freeing memory when process usage is below 3686 MB of memory and 13194139532862 MB of address space
+2014-11-24 14:18:06|   0.1|  0.0|INFORM|FME Configuration: Autodetermining optimal maximum number of objects in memory
+2014-11-24 14:18:06|   0.2|  0.1|INFORM|Trying to find a DYNAMIC plugin for reader named `CSV'
+2014-11-24 14:18:06|   0.2|  0.0|INFORM|DYLD_LIBRARY_PATH is not set
+2014-11-24 14:18:07|   0.2|  0.1|INFORM|Loaded module 'CSV' from file '/Applications/FME 2014/Engine/plugins/csv.so'
+2014-11-24 14:18:07|   0.2|  0.0|INFORM|FME API version of module 'CSV' matches current internal version (3.7 20140327)
+2014-11-24 14:18:07|   0.2|  0.0|INFORM|CSV Reader: Opening CSV files in directory `/tmp/__swizzled_url_141686748658_47579'
+2014-11-24 14:18:07|   0.2|  0.0|INFORM|Using MultiWriter $Revision$ ( $Date$ ) with keyword `MULTI_WRITER' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2014-11-24 14:18:07|   0.2|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2014-11-24 14:18:07|   0.3|  0.1|INFORM|Loaded module 'LogCount_func' from file '/Applications/FME 2014/Engine/plugins/logcount_func.so'
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.7 20140327)
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|CSV Reader: Separator Character: ','
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|CSV Reader: Skip Duplicate Delimiters: no
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|CSV Reader: Strip Quotes From Fields: yes
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|CSV Reader: File Has Field Names: yes
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|CSV Reader: Field Names Follow Header: no
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|CSV Reader: Number of Lines to Skip: 1
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|CSV Reader: Number of Footer Lines to Skip: 0
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|CSV Reader: Encoding name ''
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|CSV Reader: Allowing Spaces in Column Names: yes
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|CSV Reader: Max features to scan for schema: 10000
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|CSV Reader: Feature type names from file names: no
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|CSV Reader: Opening dataset '/tmp/__swizzled_url_141686748658_47579/rows.csv'
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|Using Tabular Reader $Revision$ ( $Date$ ) to read files from directory `/tmp/__swizzled_url_141686748658_47579'
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|Stripping quotes around fields in CSV File `/tmp/__swizzled_url_141686748658_47579/rows.csv'
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|Opened Separated Value File /tmp/__swizzled_url_141686748658_47579/rows.csv for input with delimiter `,'
+2014-11-24 14:18:07|   0.3|  0.0|INFORM|Skipped line `PRIMARY LICENSE,PRIMARY TYPE,LICENSEE,DBANAME,STREET NUMBER,STREET,CITY,STATE,ZIPCODE,COUNTY,DISTRICT,SUBDIST,PHONE NUMBER' in CSV File `/tmp/__swizzled_url_141686748658_47579/rows.csv'
+2014-11-24 14:18:07|   0.4|  0.1|INFORM|Trying to find a DYNAMIC plugin for writer named `SOCRATA'
+2014-11-24 14:18:07|   0.5|  0.1|INFORM|Loaded module 'SOCRATA' from file '/Applications/FME 2014/Engine/plugins/socrata.so'
+2014-11-24 14:18:07|   0.5|  0.0|INFORM|FME API version of module 'SOCRATA' matches current internal version (3.7 20140327)
+2014-11-24 14:18:07|   0.5|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2014-11-24 14:18:07|   0.5|  0.0|INFORM|FME API version of module 'SOCRATA' matches current internal version (3.7 20140327)
+2014-11-24 14:18:07|   0.5|  0.0|INFORM|Writer `SOCRATA_1' of type `SOCRATA' using group definition keyword `SOCRATA_1_DEF'
+2014-11-24 14:18:07|   0.5|  0.0|INFORM|FME API version of module 'SOCRATA' matches current internal version (3.7 20140327)
+2014-11-24 14:18:07|   0.5|  0.0|INFORM|Socrata Writer: Writing to dataset 'Kansas only' using Socrata user 'adrian.laurenzi+demo@socrata.com' and app token 'Eu1EiCmxZN4DWT9UmiXCLQpl6' on host 'opendata.socrata.com'
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|HTTP/FTP Transfer: Downloading resource '/api/users/current' to internal memory buffer
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|HTTP transfer summary - status code: 200, download size: '223 bytes', DNS lookup time: '0.010151 seconds', total transfer time: '1.528726 seconds', url: 'https://opendata.socrata.com/api/users/current'
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|Socrata Writer: Searching for the dataset ID for dataset with name 'Kansas only'
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|HTTP/FTP Transfer: Downloading resource '/api/search/views' to internal memory buffer
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|HTTP transfer summary - status code: 200, download size: '59 bytes', DNS lookup time: '2.4e-05 seconds', total transfer time: '0.074473 seconds', url: 'https://opendata.socrata.com/api/search/views?for_user=mvps-2wgy&publication_stage=published&publication_stage=unpublished'
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|Socrata Writer: No existing datasets matching the name 'Kansas only' were found. This dataset will be created
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|Trying to find a DYNAMIC plugin for writer named `CSV'
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|FME API version of module 'CSV' matches current internal version (3.7 20140327)
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|FME API version of module 'CSV' matches current internal version (3.7 20140327)
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|FME API version of module 'CSV' matches current internal version (3.7 20140327)
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|CSV Writer: Quoting only output fields that contain " or ,
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|CSV Writer: Append to File: no
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|CSV Writer: Output Field Names on First Line: yes
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|CSV Writer: Separator Character: ','
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|CSV Writer: Extension: '.csv'
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|CSV Writer: Quote Output Values: yes
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|CSV Writer: Quote Field Names: no
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|CSV Writer: Line Termination: Unix
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|CSV Writer: Write UTF-8 BOM: no
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|CSV Writer: Truncating values based on attribute types: no
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|CSV Writer: Using permissive attribute value conversion: no
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|CSV Writer: Opening file `/tmp/FME_1416867488949_47579/TEMP.csv'
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|Using Table Writer $Revision$ ( $Date$ ) to write tabular files to directory `/tmp/FME_1416867488949_47579'
+2014-11-24 14:18:08|   0.5|  0.0|INFORM|Opened Separated Value File /tmp/FME_1416867488949_47579/TEMP.csv for output with delimiter `,'
+2014-11-24 14:18:09|   0.6|  0.0|INFORM|CSV Reader: Closing dataset '/tmp/__swizzled_url_141686748658_47579/rows.csv'
+2014-11-24 14:18:09|   0.6|  0.0|INFORM|Emptying factory pipeline
+2014-11-24 14:18:09|   0.6|  0.0|STATS |Unexpected Input Remover(TestFactory): Tested 187 input feature(s) -- 187 feature(s) passed and 0 feature(s) failed
+2014-11-24 14:18:09|   0.6|  0.0|STATS |Unexpected Input Remover Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2014-11-24 14:18:09|   0.6|  0.0|STATS |Source -> Generic(TeeFactory): Cloned 187 input feature(s) into 187 output feature(s)
+2014-11-24 14:18:09|   0.6|  0.0|STATS |CSV Feature Counter -1 9(TeeFactory): Cloned 187 input feature(s) into 187 output feature(s)
+2014-11-24 14:18:09|   0.6|  0.0|STATS |AttributeFilter(TestFactory): Tested 187 input feature(s) -- 13 feature(s) passed and 174 feature(s) failed
+2014-11-24 14:18:09|   0.6|  0.0|STATS |AttributeFilter_NullFilter(TestFactory): Tested 174 input feature(s) -- 0 feature(s) passed and 174 feature(s) failed
+2014-11-24 14:18:09|   0.6|  0.0|STATS |AttributeFilter_MissingFilter(TestFactory): Tested 174 input feature(s) -- 0 feature(s) passed and 174 feature(s) failed
+2014-11-24 14:18:09|   0.6|  0.0|STATS |AttributeFilter_BlankFilter(TestFactory): Tested 174 input feature(s) -- 0 feature(s) passed and 174 feature(s) failed
+2014-11-24 14:18:09|   0.6|  0.0|STATS |AttributeFilter <EMPTY> Output Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2014-11-24 14:18:09|   0.6|  0.0|STATS |AttributeFilter <MISSING> Output Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2014-11-24 14:18:09|   0.6|  0.0|STATS |AttributeFilter <NULL> Output Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2014-11-24 14:18:09|   0.6|  0.0|STATS |AttributeFilter <UNFILTERED> Output Nuker(TeeFactory): Cloned 174 input feature(s) into 0 output feature(s)
+2014-11-24 14:18:09|   0.6|  0.0|STATS |AttributeFilter_KANSAS<space>CITY Feature Counter -1 5(TeeFactory): Cloned 13 input feature(s) into 13 output feature(s)
+2014-11-24 14:18:09|   0.6|  0.0|STATS |AttributeFilter_KANSAS<space>CITY -> Kansas only Correlator(TeeFactory): Cloned 13 input feature(s) into 13 output feature(s)
+2014-11-24 14:18:09|   0.6|  0.0|STATS |Final Output Feature Type Router(TestFactory): Tested 13 input feature(s) -- 13 feature(s) passed and 0 feature(s) failed
+2014-11-24 14:18:09|   0.6|  0.0|STATS |Final Output Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2014-11-24 14:18:09|   0.6|  0.0|INFORM|CSV Writer: Closing file `/tmp/FME_1416867488949_47579/TEMP.csv'
+2014-11-24 14:18:09|   0.6|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-11-24 14:18:09|   0.6|  0.0|INFORM|Feature output statistics for `CSV' writer using keyword `W_2':
+2014-11-24 14:18:09|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-11-24 14:18:09|   0.6|  0.0|STATS |                               Features Written
+2014-11-24 14:18:09|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-11-24 14:18:09|   0.6|  0.0|STATS |TEMP (TEMP)                                                                 13
+2014-11-24 14:18:09|   0.6|  0.0|STATS |==============================================================================
+2014-11-24 14:18:09|   0.6|  0.0|STATS |Total Features Written                                                      13
+2014-11-24 14:18:09|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-11-24 14:18:09|   0.6|  0.0|INFORM|Socrata Writer: 13 features treated as points, 0 features coerced to point, 0 features with unsupported geometries written without geometry
+2014-11-24 14:18:09|   0.6|  0.0|INFORM|Socrata Writer: Beginning upload of 'TEMP.csv'
+2014-11-24 14:18:09|   0.6|  0.0|INFORM|HTTP/FTP Transfer: Downloading resource '/api/imports2' to internal memory buffer
+2014-11-24 14:18:09|   0.6|  0.0|INFORM|HTTP transfer summary - status code: 200, download size: '1309 bytes', DNS lookup time: '1.8e-05 seconds', total transfer time: '0.305072 seconds', url: 'https://opendata.socrata.com/api/imports2?method=scan'
+2014-11-24 14:18:09|   0.6|  0.0|INFORM|Socrata Writer: 'TEMP.csv' successfully uploaded. The file ID is '2ed0QtmrEY8vG79ylWeu5ZlfLDXlcOR3-A7grUfDwUY'
+2014-11-24 14:18:09|   0.6|  0.0|INFORM|Socrata Writer: Beginning import of 'TEMP.csv' as a new dataset
+2014-11-24 14:18:25|   0.6|  0.0|INFORM|HTTP/FTP Transfer: Downloading resource '/api/imports2' to internal memory buffer
+2014-11-24 14:18:25|   0.6|  0.0|INFORM|HTTP transfer summary - status code: 200, download size: '436 bytes', DNS lookup time: '1.7e-05 seconds', total transfer time: '16.591718 seconds', url: 'https://opendata.socrata.com/api/imports2'
+2014-11-24 14:18:25|   0.6|  0.0|INFORM|Socrata Writer: 'TEMP.csv' was successfully imported as a new Socrata dataset. The dataset ID is 'wt84-yvye'
+2014-11-24 14:18:25|   0.6|  0.0|INFORM|HTTP/FTP Transfer: Uploading data to 'https://opendata.socrata.com/api/views/wt84-yvye'
+2014-11-24 14:18:26|   0.6|  0.0|INFORM|HTTP/FTP Transfer: Downloading resource '/api/views/wt84-yvye' to internal memory buffer
+2014-11-24 14:18:26|   0.6|  0.0|INFORM|HTTP transfer summary - status code: 200, download size: '2598 bytes', DNS lookup time: '1.9e-05 seconds', total transfer time: '0.489009 seconds', url: 'https://opendata.socrata.com/api/views/wt84-yvye'
+2014-11-24 14:18:26|   0.6|  0.0|INFORM|Socrata Writer: Set 'publicationAppendEnabled' to 'true' on the dataset with ID 'wt84-yvye'
+2014-11-24 14:18:26|   0.6|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-11-24 14:18:26|   0.6|  0.0|INFORM|Feature output statistics for `SOCRATA' writer using keyword `SOCRATA_1':
+2014-11-24 14:18:26|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-11-24 14:18:26|   0.6|  0.0|STATS |                               Features Written
+2014-11-24 14:18:26|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-11-24 14:18:26|   0.6|  0.0|STATS |Kansas only (Kansas only)                                                   13
+2014-11-24 14:18:26|   0.6|  0.0|STATS |==============================================================================
+2014-11-24 14:18:26|   0.6|  0.0|STATS |Total Features Written                                                      13
+2014-11-24 14:18:26|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-11-24 14:18:26|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-11-24 14:18:26|   0.6|  0.0|STATS |                            Features Read Summary
+2014-11-24 14:18:26|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-11-24 14:18:26|   0.6|  0.0|STATS |CSV                                                                        187
+2014-11-24 14:18:26|   0.6|  0.0|STATS |==============================================================================
+2014-11-24 14:18:26|   0.6|  0.0|STATS |Total Features Read                                                        187
+2014-11-24 14:18:26|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-11-24 14:18:26|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-11-24 14:18:26|   0.6|  0.0|STATS |                           Features Written Summary
+2014-11-24 14:18:26|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-11-24 14:18:26|   0.6|  0.0|STATS |Kansas only                                                                 13
+2014-11-24 14:18:26|   0.6|  0.0|STATS |==============================================================================
+2014-11-24 14:18:26|   0.6|  0.0|STATS |Total Features Written                                                      13
+2014-11-24 14:18:26|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-11-24 14:18:26|   0.6|  0.0|INFORM|CSV Reader: Done reading CSV files in directory `/tmp/__swizzled_url_141686748658_47579'
+2014-11-24 14:18:26|   0.6|  0.0|INFORM|Translation was SUCCESSFUL with 0 warning(s) (13 feature(s) output)
+2014-11-24 14:18:26|   0.6|  0.0|INFORM|FME Session Duration: 20.5 seconds. (CPU: 0.4s user, 0.1s system)
+2014-11-24 14:18:26|   0.6|  0.0|INFORM|END - ProcessID: 47579, peak process memory usage: 0 kB, current process memory usage: 0 kB
