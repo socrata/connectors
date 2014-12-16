@@ -4,40 +4,25 @@ title: Socrata Connectors
 bodyclass: homepage
 ---
 
-<h1>Socrata Connectors</h1>
+<h1>Socrata Connector Services &amp; ETL Starter Templates</h1>
 
-<p>To help you get started, we've provided helpful libraries for a number of different languages:</p>
+<p>To help you get started with your <code data-toggle="tooltip" title="Extract, Transform, and Load">ETL</code> project, we've provided these helpful templates, pre-built workflows, and guides for a number of differet platforms.</p>
 
-<ul class="repositories">
-  {% for conn in site.pages %}
-    {% if conn.type == 'connector' %}
-      {% if conn.platform == 'fme' %}
-        {% capture platform_link %}<a href="http://www.safe.com">Safe FME</a>{% endcapture %}
-      {% elsif conn.platform == 'kettle' %}
-        {% capture platform_link %}<a href="http://community.pentaho.com/projects/data-integration/">Pentaho Kettle</a>{% endcapture %}
-      {% endif %}
-      <li class="component repo">
-      <h3 class="name"><a href="{{ conn.external_url }}"><i class="fa fa-fw {{ conn.icon }}"></i>{{ conn.title }}</a></h3>
+<h2>Socrata Connector Services</h2>
 
-        <ul class="contributors"></ul>
+<p>Socrata Connector Services are Socrata-managed, cloud-hosted services that automatically to keep data from the third-party services you make use of in sync with datasets on your <a href="http://www.socrata.com">Socrata Platform</a>. All you need to do is work with our customer success team to provide connection information, and the rest will happen automatically. Many of them will even make sure your data is pre-formatted for use in one of Socrata's best-in-breed applications.</a>
 
-        <div class="body">
-          <p class="description">{{ conn.description }}</p>
+{% include listing.html type='service' %}
 
-          <ul class="meta">
-            {% if platform_link %}<li><em>Platform:</em> {{ platform_link }}</li>{% endif %}
-          </ul>
+<h2>ETL Templates &amp; Tools </h2>
 
-          <div class="links btn-group">
-            {% if conn.docs_url %}<button class="btn btn-default"><a href="{{ conn.docs_url }}" class="docs"><i class="fa fa-book"></i> Documentation</a></button>{% endif %}
-            {% if conn.download_url %}<button class="btn btn-default"><a href="{{ conn.download_url }}" class="docs"><i class="fa fa-cloud-download"></i> Download</a></button>{% endif %}
-            {% if conn.bugs_url %}<button class="btn btn-default"><a href="{{ conn.bugs_url }}" class="issues"><i class="fa fa-exclamation-circle"></i> Issues</a></button>{% endif %}
-          </div>
-        </div>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+<p>To help you get started, we've also provided a number of pre-built ETL templates for common use cases. Starting from these tempates, you can built out your own self-hosted workflows customized to your particular needs.</a>
 
-<script type="text/javascript" charset="utf-8" src="/js/github.js"></script>
+{% include listing.html type='template' %}
+
+<script type="text/javascript" charset="utf-8">
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+</script>
 
