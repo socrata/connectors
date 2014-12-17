@@ -15,7 +15,7 @@
 
           <div class="links btn-group">
             <button class="btn btn-default"><a href="{{ site.root }}{{ listing.url }}" class="details"><i class="fa fa-info-circle"></i> Details</a></button>
-            {% if listing.download_url %}<button class="btn btn-default"><a href="{{ listing.download_url }}" class="docs"><i class="fa fa-cloud-download"></i> Download</a></button>{% endif %}
+            {% if listing.download_url %}<button class="btn btn-default"><a onclick="var that=this;_gaq.push(['_trackEvent','Download','fmwt',this.href]);setTimeout(function(){location.href=that.href;},400);return false;" href="{{ listing.download_url }}" class="docs"><i class="fa fa-cloud-download"></i> Download</a></button>{% endif %}
             {% if listing.github_url %}<button class="btn btn-default"><a href="{{ listing.github_url }}" class="github"><i class="fa fa-github"></i> Github</a></button>{% endif %}
             {% if listing.bugs_url %}<button class="btn btn-default"><a href="{{ listing.bugs_url }}" class="issues"><i class="fa fa-exclamation-circle"></i> Issues</a></button>{% endif %}
           </div>
