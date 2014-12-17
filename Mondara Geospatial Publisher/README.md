@@ -1,6 +1,6 @@
 # Mondara Geospatial Publisher
 
-This workflow demonstrates publishing geospatial data read into FME (in this example from a Shapefile containing points) to an existing Socrata Mondara Geospatial Dataset.
+This workflow demonstrates publishing geospatial data read into FME (in this example from a Shapefile containing points) to update (by replacing) an existing Socrata Mondara Geospatial Dataset.
 
 [View preview of workflow](https://github.com/socrata/connectors/blob/master/Mondara%20Geospatial%20Publisher/geospatial_publisher_preview.png)
 

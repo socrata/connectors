@@ -27,4 +27,4 @@ It is possible to write data into Socrata as a working copy but also as a public
 
 
 ###Assumptions
-These connectors assume FME 2014 SP3. If you are running a different version you can download the latest here: http://www.safe.com/support/support-resources/fme-downloads/
+These connectors assume FME 2014 SP4 or higher. If you are running a different version you can download the latest here: http://www.safe.com/support/support-resources/fme-downloads/
