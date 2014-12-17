@@ -12,14 +12,12 @@ download_url: https://github.com/socrata/connectors/raw/master/ArcGIS%20Server/A
 bugs_url: https://github.com/socrata/connectors/issues?labels=arcgis-server&state=open
 ---
 
-# ArcGIS Server to Socrata
-
 This FME workflow extracts data from an ArcGIS Server endpoint (Esri-JSON) and publishes it to Socrata.
 
 [View preview of workflow](https://github.com/socrata/connectors/blob/master/ArcGIS%20Server/arcgis_server_preview.png)
 
 
-## Obtain your ArcGIS Esri-JSON URL
+### Obtain your ArcGIS Esri-JSON URL
 
 1. Determine what ArcGIS layer you want to export
   - It must be a Feature Layer with the REST service enabled
@@ -35,7 +33,7 @@ automatically
 7. Then copy the URL from your browser's URL bar
 
 
-## Update workflow to point to your Esri-JSON URL
+### Update workflow to point to your Esri-JSON URL
 
 Follow the steps below to get the example workflow working to create a new dataset on your data portal.
 
