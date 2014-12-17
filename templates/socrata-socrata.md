@@ -20,7 +20,7 @@ This FME workflow extracts data from an existing Socrata dataset, performs an ex
 
 Follow these steps to get the example workflow working to create a new dataset on your data portal.
 
-1. [Download the workflow](https://github.com/socrata/connectors/raw/master/Socrata%20to%20Socrata/socrata_to_socrata.fmw) and open it in FME Desktop. **NOTE:** You may have to right-click > Save Link As... to get it to download. 
+1. Download the workflow using the Download link above and open it in FME Desktop. **NOTE:** You may have to right-click > Save Link As... to get it to download. 
 2. Ensure the CSV Reader is pointing to `https://data.mo.gov/api/views/wu22-kvdm/rows.csv?accessType=DOWNLOAD` by editing the 'Source CSV' under `rows[CSV]` in the Navigator panel in the upper left of FME.
 **NOTE:** verify that you can actually download the CSV when you input `https://data.mo.gov/api/views/wu22-kvdm/rows.csv?accessType=DOWNLOAD` into a web browser. 
 2. Update your Socrata credentials for the Socrata writer by editing the following under the Socrata writer (look for `<not set> [Socrata]`) in the Navigator panel:

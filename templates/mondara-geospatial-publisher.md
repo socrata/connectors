@@ -20,7 +20,7 @@ This workflow demonstrates publishing geospatial data read into FME (in this exa
 
 Follow these steps to get the example workflow working to update a dataset. Once you have it working you can swap out the FME Reader with a reader for the geospatial data you wish to publish.
 
-1. [Download the workflow](https://github.com/socrata/connectors/raw/geospatial-publisher/Mondara%20Geospatial%20Publisher/socrata_geospatial_publisher.fmwt) and open it in FME Desktop.
+1. [Download the workflow using the Download link above and open it in FME Desktop.
 2. Create a new Geospatial Dataset on your Socrata data portal. Refer to [this guide](https://support.socrata.com/hc/en-us/articles/202950488-Host-geospatial-files-using-Socrata-Mondara) for information on Geospatial datasets.
 3. Copy the dataset ID of the Geospatial dataset you created in Step 1. To obtain the dataset ID, navigate to the dataset in your web browser. In the address bar the dataset ID is the code at the end of the URL in the form `xxxx-xxxx`. For example, for the dataset https://data.seattle.gov/Public-Safety/Fire-911/m985-ywaw, it’s identifier would be `m985-ywaw`.
 4. Update the following User Parameters in the Navigator panel in the upper left of FME:
