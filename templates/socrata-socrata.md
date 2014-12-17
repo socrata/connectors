@@ -14,7 +14,7 @@ bugs_url: https://github.com/socrata/connectors/issues?labels=socrata-to-socrata
 
 This FME workflow extracts data from an existing Socrata dataset, performs an example data transformation (filtering out features by attribute value) and then publishes the resulting data to a different Socrata dataset. This workflow could be adapted to perform joins of two existing Socrata datasets using a [FeatureMerger](http://docs.safe.com/fme/html/FME_Transformers/Default.htm#Transformers/featuremerger.htm) transformer.
 
-[View preview of workflow](https://github.com/socrata/connectors/blob/master/Socrata%20to%20Socrata/socrata_to_socrata_preview.png)
+[View preview of workflow](https://github.com/socrata/connectors/blob/master/Socrata%20to%20Socrata/img/socrata_to_socrata_preview.png)
 
 ### Quickstart
 
