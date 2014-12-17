@@ -5,8 +5,9 @@ type: template
 
 icon: fa-globe
 
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum augue ac lorem malesuada at rhoncus turpis condimentum. Maecenas commodo sem ac magna posuere ultrices. Proin ut felis ac odio consectetur rutrum vel quis sem.
+description: Extracts data from an ArcGIS Server endpoint (Esri-JSON) and publishes it to Socrata.
 
-download_url: https://github.com/socrata/connectors/raw/master/ArcGIS%20Server/ArcGIS%20Server.fmwt
-bugs_url: https://github.com/socrata/connectors/issues?labels=arcgis&state=open
+url: https://github.com/socrata/connectors/tree/master/ArcGIS%20Server
+download_url: https://github.com/socrata/connectors/raw/master/ArcGIS%20Server/ArcGIS%20Server2Socrata.fmwt
+bugs_url: https://github.com/socrata/connectors/issues?labels=arcgis-server&state=open
 ---
