@@ -16,4 +16,4 @@ bugs_url: https://github.com/socrata/connectors/issues?labels=shapefile&state=op
 
 Download the FME template workflow and follow the instructions documented within the workflow.
 
-[View preview of workflow](https://github.com/socrata/connectors/blob/master/ArcGIS%20Server/arcgis_server_preview.png)
+[View preview of workflow](https://github.com/socrata/connectors/blob/master/Shapefile%20to%20Socrata/img/shapefile_to_socrata_preview.png)
