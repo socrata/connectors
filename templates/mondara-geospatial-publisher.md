@@ -8,7 +8,7 @@ icon: fa-compass
 description: Allows publishing geospatial data read into FME (in this example from a Shapefile containing points) to update an existing Socrata Mondara Geospatial Dataset.
 
 github_url: https://github.com/socrata/connectors/tree/master/Mondara%20Geospatial%20Publisher
-download_url: https://github.com/socrata/connectors/raw/master/Shapefile%20to%20Socrata/Shapefile%20to%20Socrata.fmwt
+download_url: https://github.com/socrata/connectors/raw/master/Mondara%20Geospatial%20Publisher/socrata_geospatial_publisher.fmwt
 bugs_url: https://github.com/socrata/connectors/issues?labels=mondara-publisher&state=open
 ---
 
