@@ -7,3 +7,4 @@ title: Socrata Connectors &amp; ETL Templates
 root: "/connectors"
 icon: fa fa-refresh
 github_repo: https://github.com/socrata/connectors
+contribute: /connectors/contributing.html
