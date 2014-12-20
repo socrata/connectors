@@ -8,3 +8,6 @@ root: "/connectors"
 icon: fa fa-refresh
 github_repo: https://github.com/socrata/connectors
 contribute: /connectors/contributing.html
+
+local_js:
+  - "/common/js/ga-tracking.js"
