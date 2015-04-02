@@ -7,14 +7,14 @@ icon: fa-cloud
 
 description: Reads data from a CSV, transform date from dd/mm/yyyy to yyyy/mm/dd, reproject X/Y to Lat/Lon and publish the result as a Socrata.
 
-github_url: 
-download_url: 
-bugs_url: 
+github_url: https://github.com/socrata/connectors/tree/master/CSV%20to%20Socrata%20with%20Transformations
+download_url: https://github.com/socrata/connectors/raw/master/CSV%20to%20Socrata%20with%20Transformations/fme-dateformat-xy-to-latlon.fmwt
+bugs_url: https://github.com/socrata/connectors/issues?labels=csv-to-socrata-with-transformations&state=open
 ---
 
 Data extracts from line-of-business systems can require some transformation before upload to Socrata. This FME workflow extracts data from a CSV, transforms the date field from dd/mm/yyyy to yyyy/mm/dd, re-projects X/Y location fields to latitude/longitude, concatenates latitude/longitude to a single field, renames fields to a human-readable format and publishes to a Socrata site. This workflow uses the [Date Formatter](http://docs.safe.com/fme/html/FME_Transformers/FME_Transformers.htm#Transformers/dateformatter.htm), [Attribute Reprojector](http://docs.safe.com/fme/html/FME_Transformers/FME_Transformers.htm#Transformers/attributereprojector.htm), [String Concatenator](http://docs.safe.com/fme/html/FME_Transformers/FME_Transformers.htm#Transformers/stringconcatenator.htm) and the [Attribute Renamer](http://docs.safe.com/fme/html/FME_Transformers/FME_Transformers.htm#Transformers/attributerenamer.htm). You can adapt this workflow based on your source dataset to perform one or more of the transformations.
 
-[View preview of workflow]()
+[View preview of workflow](https://github.com/socrata/connectors/raw/master/CSV%20to%20Socrata%20with%20Transformations/img/csv_to_socrata_preview.png)
 
 ### Quickstart
 
