@@ -1,18 +1,29 @@
-# Creating a LAGAN to Socrata Transformation Using FME
+---
+layout: listing
+title: Kana LAGAN to Socrata
+type: template
 
-## *A Workflow for Delivering Data to the Socrata 311 Explorer*
+icon: fa-ticket
+
+description: Allows publishing data from a Kana LAGAN system to Socrata in the schemea needed for the ServiceConnect app.
+
+github_url: https://github.com/socrata/connectors/tree/master/Kana%20LAGAN%20to%20Socrata%20(ServiceConnect)
+download_url: https://github.com/socrata/connectors/raw/master/Kana%20LAGAN%20to%20Socrata%20(ServiceConnect)/Kana%20LAGAN%20to%20Socrata%20(ServiceConnect).fmwt
+bugs_url: https://github.com/socrata/connectors/issues?labels=kana-lagan&state=open
+---
+
+
+# Creating a Kana LAGAN to Socrata Transformation Using FME
+
+## *A Workflow for Delivering Data to the Socrata Service Connect (311 Explorer)*
 
 # Introduction
 
-The purpose of this document is to provide instructions to the New Orleans 311 team on how to access, use, and maintain FME, a data transformation app that is **currently installed on the SCRIPTS server**. The primary section of this report,  "Creating a SQL Server to Socrata Transformation"  provides instructions on how to pull 311 data from the LAGAN reporting server and push it to the New Orleans Socrata data portal at data.nola.gov in order to feed the data to the 311 Explorer application. The diagram below illustrates this workflow.
+Below are instructions on how to pull 311 data from the LAGAN reporting server and push it to a Socrata dataset in a schema appropriate for the [Socrata Service Connect app](http://open-data-apps.socrata.com/catalog/service-connect/) The diagram below illustrates this workflow. This is based on the FME workflow used to publish data to [New Orleans Socrata data portal](https://data.nola.gov/). 
 
-![Transformation workflow](image_0.jpg)
+![Transformation workflow](https://github.com/socrata/connectors/raw/master/Kana%20LAGAN%20to%20Socrata%20(ServiceConnect)/img/image_0.jpg)
 
 ## Installation
-
-The City of New Orlean's FME serial number is: ****-****-**** 
-
-The latest production release of FME Desktop can be downloaded from: [http://downloads.safe.com/fme/fme_install.msi](http://downloads.safe.com/fme/fme_install.msi) 
 
 Installation and licensing instruction can be viewed at: [http://docs.safe.com/fme/pdf/FMEInstallationLicensing.pdf](http://docs.safe.com/fme/pdf/FMEInstallationLicensing.pdf) (Chapter 3 for fixed licenses) 
 
@@ -24,7 +35,7 @@ Support contact: [codes@safe.com](mailto:codes@safe.com).
 
 # Creating a SQL Server to Socrata Transformation 
 
-These instructions describe how to pull 311 data from the LAGAN reporting server and push it to the New Orleans Socrata data portal at data.nola.gov. 
+These instructions describe how to pull 311 data from the LAGAN reporting server and push it to a Socrata data portal.
 
 ## STEP 1: Create a SQL Server Reader
 
@@ -34,7 +45,7 @@ These instructions describe how to pull 311 data from the LAGAN reporting server
 
 2. Choose to start a new blank workspace.
 
-3. Click the "Add Reader" button in the toolbar. ![Add Reader Button](image_1.png)
+3. Click the "Add Reader" button in the toolbar. ![Add Reader Button](https://github.com/socrata/connectors/raw/master/Kana%20LAGAN%20to%20Socrata%20(ServiceConnect)/img/image_1.png)
 
 4. An "Add Reader" widget will appear. In the “Format” field, type “Microsoft SQL Server Non-spatial” and select it. 
 
@@ -48,7 +59,7 @@ These instructions describe how to pull 311 data from the LAGAN reporting server
 
 4. Password: **PASSWORD** 
 
-5. Click the dialogue button next to the "Table List" field and select the table that you would like to write to Socrata. The table used in the first iteration of this transformation is “**nola_case_view_total**”.
+5. Click the dialogue button next to the "Table List" field and select the table that you would like to write to Socrata (for example, perhaps “**case_view_total**”).
 
 6. Click OK.
 
@@ -70,13 +81,13 @@ These instructions describe how to pull 311 data from the LAGAN reporting server
 
 ## STEP 3: Create an Attribute Projector to Convert LAGAN Data to Lat/Long
 
-*The data in LAGAN is stored in the Louisiana State Plane 1983 South projection system (LA83-SF-MOD). It must be converted to a lat/long coordinate system in order to Socrata to consume it. *
+*For New Orleans, the data in LAGAN was stored in the Louisiana State Plane 1983 South projection system (LA83-SF-MOD), but you should identify which projection you are using and select that. It must be converted to a lat/long coordinate system in order to Socrata to consume it. *
 
 1. Search the FME "Transformer Gallery" for the “Attribute Reprojector”. Double click on the “Tester” entry in the gallery and it will appear in your workspace. Connect the tester to the attribute reprojector, as described in step 2 of the section above. 
 
 2. Double click on the transformer widget inside of the main workbench window to bring up the parameters. Select "LOCATION_X" from the list of fields in the “X Attribute” drop-down menu and “LOCATION_Y” for the “Y Attribute” dropdown.
 
-3. For "Source Coordinate System", click the ellipses button next to the drop down menu. Search for and select “LA83-SF-MOD”.
+3. For "Source Coordinate System", click the ellipses button next to the drop down menu. Search for and select the projection of your data (e.g. “LA83-SF-MOD”).
 
 4. For "Destination Coordinate System", search for “EPSG:4326”.
 
@@ -114,15 +125,15 @@ These instructions describe how to pull 311 data from the LAGAN reporting server
 
 ## STEP 6: Create a Socrata Writer 
 
-*The Socrata Writer will be used to push LaganPDM data to data.nola.gov. *
+*The Socrata Writer will be used to push LaganPDM data to your data portal (e.g. data.nola.gov). *
 
 1. Click the "Writer" button, which is located to the right of the “Reader” button, and resembles the reader button except that the green arrow is to the left of the icon and the icon is a shade lighter. Connect the writer to the StringConcatenator. 
 
 2. An "Add Writer" widget will appear. In the “Format” field, type “Socrata” and select the Socrata option when it appears/ 
 
-3. In the "Dataset" field, type “data.nola.gov”.
+3. In the "Dataset" field, type your domain (e.g. “data.nola.gov”).
 
-4. Click "Parameters" and enter your data.nola.gov username and password.
+4. Click "Parameters" and enter your Socrata username and password.
 
 5. After clicking ok, you will be given the option to add a new feature type to the writer. Click "Yes".  If you are creating a new dataset, then add a unique name for the dataset here. If you are modifying an existing dataset, then enter the 4x4 Socarata identifier of the dataset here. 
 
@@ -130,7 +141,7 @@ These instructions describe how to pull 311 data from the LAGAN reporting server
 
 ## STEP 7: Customize Data Output
 
-*At this stage, we will be customizing the data output to reflect the data structure that the Socrata 311 Explorer expects to receive. This will involve renaming, eliminating, and changing the datatype of the fields in the table.  *
+*At this stage, we will be customizing the data output to reflect the data structure that the Socrata Service Connect App expects to receive. This will involve renaming, eliminating, and changing the datatype of the fields in the table.  *
 
 1. Start by expanding all the fields for both the StringConcatenator and the Socrata Writer by clicking the right-facing arrow inside of the respective transformer icons. We will be mapping the fields in the concatenator to those in the writer. Mapping fields in FME is similar to connecting transformers. You must drag the red arrow heads from the source fields to the fields in the downstream transformer that you’d like to inherit the source attributes. 
 
@@ -140,11 +151,11 @@ These instructions describe how to pull 311 data from the LAGAN reporting server
 
 4. Right click on the field list in the Socrata Writer. Click "Properties" and navigate to the “User Attributes” tab. Next to the “location” field, click on the “type” cell and choose “location”. For the “zip_code” field, choose “number”.
 
-<table>
+<table border="1" padding="4">
   <tr>
-    <td>LAGAN FIELD NAME</td>
-    <td>SOCRATA FIELD NAME</td>
-    <td>NOTES</td>
+    <td><strong>LAGAN FIELD NAME</strong></td>
+    <td><strong>SOCRATA FIELD NAME</strong></td>
+    <td><strong>NOTES</strong></td>
   </tr>
   <tr>
     <td>CASE_REFERENCE</td>
@@ -207,12 +218,12 @@ These instructions describe how to pull 311 data from the LAGAN reporting server
     <td>This field was created in Step 5. Change type to “location” in the Feature Type Properties “Type” field. </td>
   </tr>
   <tr>
-    <td><none></td>
+    <td>&nbsp;</td>
     <td>second_issue_type</td>
     <td>This field does not exist in LAGAN and will be created</td>
   </tr>
   <tr>
-    <td><none></td>
+    <td>&nbsp;</td>
     <td>image</td>
     <td>This field does not exist in LAGAN and will be created</td>
   </tr>
@@ -227,5 +238,5 @@ These instructions describe how to pull 311 data from the LAGAN reporting server
 
 ## APPENDIX I: The Final Product
 
-![Transformation Complete](image_2.png)
+![Transformation Complete](https://raw.githubusercontent.com/socrata/connectors/master/Kana%20LAGAN%20to%20Socrata%20(ServiceConnect)/img/image_2.png)
 
