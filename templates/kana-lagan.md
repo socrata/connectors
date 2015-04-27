@@ -15,6 +15,8 @@ bugs_url: https://github.com/socrata/connectors/issues?labels=kana-lagan&state=o
 
 # Creating a Kana LAGAN to Socrata Transformation Using FME
 
+**Author:** [Darin J. Acosta](http://darinacosta.com) 
+
 ## *A Workflow for Delivering Data to the Socrata Service Connect (311 Explorer)*
 
 # Introduction

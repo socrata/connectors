@@ -1,0 +1,30 @@
+<p>This FME workflow extracts data from an existing Socrata dataset, performs an example data transformation (filtering out features by attribute value) and then publishes the resulting data to a different Socrata dataset. This workflow could be adapted to perform joins of two existing Socrata datasets using a <a href="http://docs.safe.com/fme/html/FME_Transformers/Default.htm#Transformers/featuremerger.htm">FeatureMerger</a> transformer.</p>
+
+<p><a href="https://github.com/socrata/connectors/blob/master/Socrata%20to%20Socrata/img/socrata_to_socrata_preview.png">View preview of workflow</a></p>
+
+<h3 id="quickstart">Quickstart</h3>
+
+<p>Follow these steps to get the example workflow working to create a new dataset on your data portal.</p>
+
+<ol>
+  <li>Download the workflow using the Download link above and open it in FME Desktop. <strong>NOTE:</strong> You may have to right-click &gt; Save Link As… to get it to download. </li>
+  <li>Ensure the CSV Reader is pointing to <code>https://data.mo.gov/api/views/wu22-kvdm/rows.csv?accessType=DOWNLOAD</code> by editing the ‘Source CSV’ under <code>rows[CSV]</code> in the Navigator panel in the upper left of FME.
+<strong>NOTE:</strong> verify that you can actually download the CSV when you input <code>https://data.mo.gov/api/views/wu22-kvdm/rows.csv?accessType=DOWNLOAD</code> into a web browser. </li>
+  <li>Update your Socrata credentials for the Socrata writer by editing the following under the Socrata writer (look for <code>&lt;not set&gt; [Socrata]</code>) in the Navigator panel:
+    <ul>
+      <li>Domain (e.g. data.seattle.gov)</li>
+      <li>User</li>
+      <li>Password</li>
+    </ul>
+  </li>
+  <li>Run the workflow and ensure a new dataset was created on your domain.</li>
+</ol>
+
+<h3 id="adapting-the-workflow-for-your-data">Adapting the workflow for your data</h3>
+
+<ol>
+  <li>Obtain the download URL for your source Socrata dataset by navigating to the dataset in a web browser. Click the blue ‘Export’ button and copy the ‘CSV’ link under Download As. <strong>Right click &gt; Copy link address</strong></li>
+  <li>Paste this CSV download link into the ‘Source CSV’ field under <code>rows[CSV]</code> in the Navigator panel in FME.</li>
+  <li>To configure the dataset to publish to and the update method refer to ‘Steps 3 and 4’ of <a href="http://dev.socrata.com/publishers/examples/fme-socrata-writer.html#setting-up-the-workflow-in-fme-desktop">this guide</a>.</li>
+  <li>Run the workflow!</li>
+</ol>

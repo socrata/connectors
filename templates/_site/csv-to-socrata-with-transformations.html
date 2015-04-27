@@ -1,0 +1,32 @@
+<p>Data extracts from line-of-business systems can require some transformation before upload to Socrata. This FME workflow extracts data from a CSV, transforms the date field from dd/mm/yyyy to yyyy/mm/dd, re-projects X/Y location fields to latitude/longitude, concatenates latitude/longitude to a single field, renames fields to a human-readable format and publishes to a Socrata site. This workflow uses the <a href="http://docs.safe.com/fme/html/FME_Transformers/FME_Transformers.htm#Transformers/dateformatter.htm">Date Formatter</a>, <a href="http://docs.safe.com/fme/html/FME_Transformers/FME_Transformers.htm#Transformers/attributereprojector.htm">Attribute Reprojector</a>, <a href="http://docs.safe.com/fme/html/FME_Transformers/FME_Transformers.htm#Transformers/stringconcatenator.htm">String Concatenator</a> and the <a href="http://docs.safe.com/fme/html/FME_Transformers/FME_Transformers.htm#Transformers/attributerenamer.htm">Attribute Renamer</a>. You can adapt this workflow based on your source dataset to perform one or more of the transformations.</p>
+
+<p><a href="https://github.com/socrata/connectors/raw/master/CSV%20to%20Socrata%20with%20Transformations/img/csv_to_socrata_preview.png">View preview of workflow</a></p>
+
+<h3 id="quickstart">Quickstart</h3>
+
+<p>Follow these steps to get the example workflow working.</p>
+
+<ol>
+  <li>Download the workflow using the Download link above and open it in FME Desktop. <strong>NOTE:</strong> You may have to right-click &gt; Save Link As… to get it to download. </li>
+  <li>Ensure the CSV Reader is pointing to <code>http://www.dublinked.ie/datastore/server/FileServerWeb/FileChecker?metadataUUID=b319367a25ac481692c7f36d2fc6f6f3&amp;filename=DCCCustomerServiceRequests_P20130409-0956.csv</code> by editing the ‘Source CSV’ under <code>rows[CSV]</code> in the Navigator panel in the upper left of FME.
+<strong>NOTE:</strong> verify that you can actually download the CSV when you input <code>http://www.dublinked.ie/datastore/server/FileServerWeb/FileChecker?metadataUUID=b319367a25ac481692c7f36d2fc6f6f3&amp;filename=DCCCustomerServiceRequests_P20130409-0956.csv</code> into a web browser. </li>
+  <li>Update your Socrata credentials for the Socrata writer by editing the following under the Socrata writer (look for <code>&lt;not set&gt; [Socrata]</code>) in the Navigator panel:
+    <ul>
+      <li>Domain (e.g. data.seattle.gov)</li>
+      <li>User</li>
+      <li>Password</li>
+    </ul>
+  </li>
+  <li>Run the workflow and ensure a new dataset was created on your domain.</li>
+</ol>
+
+<h3 id="adapting-the-workflow-for-your-data">Adapting the workflow for your data</h3>
+
+<ol>
+  <li>Configure the source CSV to point to your dataset</li>
+  <li>Set the DateFormatter parameters to recognise the source date format and set the destination date format to ISO Date</li>
+  <li>Set the X and Y attributes in the AttributeReprojector and define the source coordinate system (this FME workflow is currently set to EPSG:2157 Irish Transverse Mercator)</li>
+  <li>Set the StringConcatenator to concatenate the newly projected latitude and longitude fields</li>
+  <li>To configure the dataset to publish to and the update method refer to ‘Steps 3 and 4’ of <a href="http://dev.socrata.com/publishers/examples/fme-socrata-writer.html#setting-up-the-workflow-in-fme-desktop">this guide</a>.</li>
+  <li>Run the workflow!</li>
+</ol>
