@@ -1,7 +1,7 @@
 ---
 layout: listing
 title: ArcGIS Online
-type: template
+type: template-fme
 
 icon: fa-globe
 

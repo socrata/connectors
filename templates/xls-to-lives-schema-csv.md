@@ -1,7 +1,7 @@
 ---
 layout: listing
 title: XLS to LIVES schema CSV
-type: template
+type: template-kettle
 
 icon: fa-file-o
 

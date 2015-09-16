@@ -1,7 +1,7 @@
 ---
 layout: listing
 title: ArcGIS Server
-type: template
+type: template-fme
 
 icon: fa-globe
 

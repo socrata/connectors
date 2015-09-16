@@ -18,13 +18,16 @@ bodyclass: homepage
 
 <p>To help you get started, we've also provided a number of pre-built ETL templates for common use cases. Starting from these templates, you can build out your own self-hosted workflows customized to your particular needs.</p>
 
+<h3>FME Templates</h3>
 <p class="alert alert-info"><strong>NOTE:</strong> these are Safe FME templates. Find more information on getting started with <a href="http://dev.socrata.com/connectors/safe-fme.html">FME and Socrata here</a>.</p>
+{% include listing.html type='template-fme' %}
 
-{% include listing.html type='template' %}
+<h3>Kettle Templates</h3>
+<p class="alert alert-info"><strong>NOTE:</strong> these are Kettle workflows. Find more information on getting started with <a href="http://dev.socrata.com/connectors/pentaho-kettle.html">Kettle here</a>.</p>
+{% include listing.html type='template-kettle' %}
 
 <script type="text/javascript" charset="utf-8">
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   });
 </script>
-
