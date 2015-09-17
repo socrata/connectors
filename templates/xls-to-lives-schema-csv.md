@@ -34,5 +34,5 @@ Follow these steps to get the example workflow working.
 4. Run the workflow and ensure that the file transformed_data.csv was created in the directory with current timestamp.
 
 ### Notes
-[^1]: The current [LIVE Standard](http://www.yelp.com/healthscores) is out of date.
+[^1]: The target schema is the [flattened LIVES standard](https://docs.google.com/document/d/1eeO5T_lt8QHGHMjpj6M9071y5OFOXcADFI4F7AIZ2iE/edit?usp=sharing) based on the original [LIVES Standard](http://www.yelp.com/healthscores) for health inspection data.
 [^2]: Be sure to add the new path after browsing to the file to ensure the workflow reads correct path.
