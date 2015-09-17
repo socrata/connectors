@@ -8,7 +8,7 @@ icon: fa-file-o
 description: Reads data from 2 excel (XLS) files of Restaurant and Violation data and transforms the data to meet the LIVES schema into a csv file.
 
 github_url: https://github.com/socrata/connectors/tree/master/XLS%20to%20LIVES%20Schema%20CSV
-download_url: https://github.com/socrata/connectors/tree/master/XLS%20to%20LIVES%20Schema%20CSV/inspection_violations.zip
+download_url: https://github.com/socrata/connectors/blob/master/XLS%20to%20LIVES%20Schema%20CSV/inspection_violations.zip?raw=true
 bugs_url: https://github.com/socrata/connectors/issues?labels=xls-to-lives-schema-csv&state=open
 ---
 
