@@ -1,7 +1,7 @@
 ---
 layout: listing
 title: Open311
-type: template
+type: template-fme
 
 icon: fa-ticket
 

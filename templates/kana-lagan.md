@@ -1,7 +1,7 @@
 ---
 layout: listing
 title: Kana LAGAN to Socrata
-type: template
+type: template-fme
 
 icon: fa-ticket
 

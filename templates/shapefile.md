@@ -1,7 +1,7 @@
 ---
 layout: listing
 title: Shapefile
-type: template
+type: template-fme
 
 icon: fa-file-o
 

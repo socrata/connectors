@@ -1,7 +1,7 @@
 ---
 layout: listing
 title: Socrata to Socrata
-type: template
+type: template-fme
 
 icon: fa-cloud
 

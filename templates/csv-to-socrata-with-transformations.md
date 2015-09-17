@@ -1,7 +1,7 @@
 ---
 layout: listing
 title: CSV to Socrata, transforming date & reprojecting X/Y to Lat/Lon
-type: template
+type: template-fme
 
 icon: fa-cloud
 
