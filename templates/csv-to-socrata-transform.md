@@ -18,6 +18,7 @@ It uses the following transformation:
 
 ####
 tranformation.ktr workflow:
+
 * [CSV Input](http://wiki.pentaho.com/display/EAI/CSV+File+Input)
 * [Row Normaliser](http://wiki.pentaho.com/display/EAI/Row+Normaliser) in order to Pivot Columns into flat rows
 * [Filter Rows](http://wiki.pentaho.com/display/EAI/Filter+Rows) to remove unwated "NA" characters
