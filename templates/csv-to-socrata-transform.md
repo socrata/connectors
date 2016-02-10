@@ -7,8 +7,8 @@ icon: fa-file-o
 
 description: Reads data from 1 csv, pivots columns to rows and other transformations then publishes to Socrata.
 
-github_url: 
-download_url: 
+github_url: https://github.com/socrata/connectors/tree/master/CSV%20to%20Socrata%20Transform
+download_url: https://github.com/socrata/connectors/tree/master/CSV%20to%20Socrata%20Transform
 bugs_url: 
 ---
 
