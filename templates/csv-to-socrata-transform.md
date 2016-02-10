@@ -14,7 +14,7 @@ This workflow demonstrates the basic functionality of Pentaho Kettle Data Integr
 
 To publish to Socrata using Pentaho is a two-step process. 1 workflow runs the transformations and the 2nd workflow runs datasync on the updated and transformed csv.
 
-#### The Transformation
+#### The Transformations
 
 tranformation.ktr workflow:
 
