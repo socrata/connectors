@@ -14,9 +14,8 @@ This workflow demonstrates the basic functionality of Pentaho Kettle Data Integr
 
 To publish to Socrata using Pentaho is a two-step process. 1 workflow runs the transformations and the 2nd workflow runs datasync on the updated and transformed csv.
 
-It uses the following transformation:
+#### The Transformation
 
-#### The Steps
 tranformation.ktr workflow:
 
 * [CSV Input](http://wiki.pentaho.com/display/EAI/CSV+File+Input)
@@ -27,7 +26,6 @@ tranformation.ktr workflow:
 * [Replace String](http://wiki.pentaho.com/display/EAI/Replace+in+String) in order to remove unwanted text from cells
 * [Text Output](http://wiki.pentaho.com/display/EAI/Text+File+Output) (force quote enclosure, comma separator, [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) date format and trims all fields)
 
-####
 datasyncrunner.kjb:
 * [Job Scheduling](http://wiki.pentaho.com/display/EAI/Job+Executor) to iniate workflow
 * [Transformation](http://wiki.pentaho.com/display/EAI/Transformation+Executor) runs the transformation.ktr workflow
