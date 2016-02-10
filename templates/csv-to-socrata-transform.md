@@ -9,7 +9,7 @@ description: Reads data from 1 csv, pivots columns to rows and other transformat
 
 github_url: https://github.com/socrata/connectors/tree/master/CSV%20to%20Socrata%20Transform
 download_url: https://github.com/socrata/connectors/tree/master/CSV%20to%20Socrata%20Transform
-bugs_url: 
+bugs_url: https://github.com/socrata/connectors/issues/new
 ---
 
 This workflow demonstrates the basic functionality of Pentaho Kettle Data Integration in order to clean a file, pivot columns to rows, and publish to Socrata.
