@@ -16,7 +16,7 @@ To publish to Socrata using Pentaho is a two-step process. 1 workflow runs the t
 
 It uses the following transformation:
 
-####
+#### The Steps
 tranformation.ktr workflow:
 
 * [CSV Input](http://wiki.pentaho.com/display/EAI/CSV+File+Input)
