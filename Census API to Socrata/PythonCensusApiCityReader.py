@@ -26,9 +26,9 @@ class PythonCensusApiCityReader(object):
 			fips_city = ""
 			fips_state = ""
 			for city in self.cities:
-				lstLocation = city.split(",")
-				fips_city = lstLocation[0]
-				fips_state = lstLocation[1]
+				lst_location = city.split(",")
+				fips_city = lst_location[0]
+				fips_state = lst_location[1]
 				feature_name = ""
 				feature_value = ""
 				indicator_url = ""
