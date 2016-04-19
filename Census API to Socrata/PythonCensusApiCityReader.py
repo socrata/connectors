@@ -21,8 +21,8 @@ class PythonCensusApiCityReader(object):
 
     def close(self):
 		# loop through years
-		lstYears = self.years.split(",")
-		for year in lstYears:
+		lst_years = self.years.split(",")
+		for year in lst_years:
 			fips_city = ""
 			fips_state = ""
 			for city in self.cities:
