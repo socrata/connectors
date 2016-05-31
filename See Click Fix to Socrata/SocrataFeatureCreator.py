@@ -120,6 +120,7 @@ def get_socrata_formatted_issues(issues, city_name):
     return socrata_issues
 
 def get_org_name_without_state(org_name):
+	#data cleaning incorrect orgnames with nulls: org_name.replace(old, new)
     return org_name.replace(', MA', '').replace(' MA', '')
 
 def format_date(date_str):
