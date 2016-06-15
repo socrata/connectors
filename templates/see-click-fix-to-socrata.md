@@ -3,7 +3,7 @@ layout: listing
 title: See Click Fix to Socrata
 type: template-fme
 
-icon: fa-file-o
+icon: fa-cloud
 
 description: Pulls data from the See Click Fix API and publishes to Socrata dataset
 
