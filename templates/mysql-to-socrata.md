@@ -1,7 +1,7 @@
 ---
 layout: listing
 title: mySql to Socrata
-type: template-R
+type: template-fme
 
 icon: fa-icon
 
