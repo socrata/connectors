@@ -13,15 +13,10 @@ The site is a customized [Jekyll](http://jekyllrb.com/) site, so there are some 
 3. Make sure you have Ruby version installed. Check `.ruby-version` to see the preferred version. If you're using rbenv or rvm, this should automatically be set up
 4. Install the Bundler Gem installed: `gem install bundler`
 5. Set up the Gem bundle: `bundle`
-6. Make sure you have the `jekyll` RubyGem installed
-7. You can then run one of several options on the `Rakefile`, depending on your setup:
-    - `rake incremental` will perform a Jekyll build into `./public`. If rerun, it'll be faster since it'll only build what you have changed.
-    - `rake watch` will perform an incremental build automatically when you change files, which is handy if you're using something like [Pow](https://pow.cx)
-    - `rake serve` will run a standalone server for testing
-
-### Before Submitting
-
-Before submitting, run `rake test` and `rake htmlproof` to run the test suite and confirm that you haven't broken anything.
+6. You can then run one of several options on the `Rakefile`, depending on your setup:
+    - `jekyll build` will perform a Jekyll build into `./public`. If rerun, it'll be faster since it'll only build what you have changed.
+    - `jekyll build --watch` will perform an incremental build automatically when you change files, which is handy if you're using something like [Pow](https://pow.cx)
+    - `jekyll serve --watch` will run a standalone server for testing
 
 ### Modifying CSS/SASS
 

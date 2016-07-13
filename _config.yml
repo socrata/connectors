@@ -1,10 +1,11 @@
 destination: "public/connectors"
 exclude: [Gemfile, Gemfile.lock, public, .ruby-*]
+incremental: true
 
 ga_tracking_code: "UA-9046230-12"
 
 title: Socrata Connectors &amp; ETL Templates
-root: "/connectors"
+baseurl: "/connectors"
 icon: fa fa-refresh
 github_repo: https://github.com/socrata/connectors
 contribute: /connectors/contributing.html
