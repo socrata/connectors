@@ -11,7 +11,7 @@ github_url: https://github.com/hiratake55/RForcecom
 download_url: https://cran.r-project.org/web/packages/RForcecom/index.html
 bugs_url: https://github.com/hiratake55/RForcecom/issues
 ---
-This walkthrough goes through the steps of taking data from any system that uses ODBC and then loads that into an existing Socrata table using write.Socrata from RSocrata
+This walkthrough goes through the steps of taking data from Salesforce and then loads that into an existing Socrata table using write.Socrata from RSocrata. Rforcecom Example from [Takekatsu Hiramura](https://hiratake55.wordpress.com/2013/03/28/rforcecom/)
 
 
 
@@ -19,19 +19,25 @@ This walkthrough goes through the steps of taking data from any system that uses
 
 ##Step 1
 
-```install.packages('RODBC')
-   install.packages('RSocrata')```
+```install.packages("RForcecom")
+library(RForcecom)```
 
 ##Step 2
 
-create constants so that R can access mySQL instance 
+Login to Salesforce
+To sign in to the Salesforce.com, use rforcecom.login() function
 
-```ch <- odbcConnect("some dsn", uid = "user", pwd = "****") ```
+```username <- "yourname@yourcompany.com"
+	password <- "YourPasswordSECURITY_TOKEN"
+	instanceURL <- "https://na14.salesforce.com/"
+	apiVersion <- "26.0"
+	(session <- rforcecom.login(username, password, instanceURL, apiVersion))```
 
 ##Step 3 
 
-use con to write to data.frame 
-```res <- sqlFetch(ch, "table name")```
+Make a query using Salesforce Query language, also called SoQL..
+```soqlQuery <- "SELECT Id, Name, Phone FROM Account WHERE AnnualRevenue > 50000 LIMIT 5"
+	rforcecom.query(session, soqlQuery)```
 
 ##Step 4 
 
@@ -43,5 +49,5 @@ ensure that you have a Socrata dataset with proper fields and proper datatypes t
 	datasetToAddToUrl <- "https://opendata.socrata.com/resource/evnp-32vr.json" 
 	write.socrata(table,datasetToAddToUrl,"UPSERT",socrataEmail,socrataPassword)
 	```
-For full documentation on RODBC please see https://cran.r-project.org/web/packages/RODBC/vignettes/RODBC.pdf
+For full documentation on Rforcecom please see http://rforcecom.plavox.info/
 
