@@ -2,7 +2,7 @@
   {% for listing in site.pages %}
     {% if listing.type == include.type %}
       <li class="component repo">
-        <h3 class="name"><a href="{{ site.root }}{{ listing.url }}"><i class="fa fa-fw {{ listing.icon }}"></i>{{ listing.title }}</a></h3>
+        <h3 class="name"><a href="{{ site.baseurl }}{{ listing.url }}"><i class="fa fa-fw {{ listing.icon }}"></i>{{ listing.title }}</a></h3>
 
         <ul class="contributors"></ul>
 
@@ -14,7 +14,7 @@
           </ul>
 
           <div class="links btn-group">
-            <button class="btn btn-default"><a href="{{ site.root }}{{ listing.url }}" class="details"><i class="fa fa-info-circle"></i> Details</a></button>
+            <button class="btn btn-default"><a href="{{ site.baseurl }}{{ listing.url }}" class="details"><i class="fa fa-info-circle"></i> Details</a></button>
             {% if listing.download_url %}<button class="btn btn-default"><a href="{{ listing.download_url }}" class="docs ga-track" data-action="FME_template" data-label="Downloaded" data-value="{{ listing.download_url }}"><i class="fa fa-cloud-download"></i> Download</a></button>{% endif %}
             {% if listing.github_url %}<button class="btn btn-default"><a href="{{ listing.github_url }}" class="github"><i class="fa fa-github"></i> Github</a></button>{% endif %}
             {% if listing.bugs_url %}<button class="btn btn-default"><a href="{{ listing.bugs_url }}" class="issues"><i class="fa fa-exclamation-circle"></i> Issues</a></button>{% endif %}
