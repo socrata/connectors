@@ -11,43 +11,49 @@ github_url: https://github.com/hiratake55/RForcecom
 download_url: https://cran.r-project.org/web/packages/RForcecom/index.html
 bugs_url: https://github.com/hiratake55/RForcecom/issues
 ---
-This walkthrough goes through the steps of taking data from Salesforce and then loads that into an existing Socrata table using write.Socrata from RSocrata. Rforcecom Example from [Takekatsu Hiramura](https://hiratake55.wordpress.com/2013/03/28/rforcecom/)
 
+This walkthrough goes through the steps of taking data from Salesforce and then loads that into an existing Socrata table using write. Rforcecom Example from [Takekatsu Hiramura](https://hiratake55.wordpress.com/2013/03/28/rforcecom/)
 
+## Step 1: Install Required Dependencies
 
-  
+{% highlight r %}
+install.packages("RForcecom")
+library(RForcecom)
+{% endhighlight %}
 
-##Step 1
+## Step 2: Log into Salesforce
 
-```install.packages("RForcecom")
-library(RForcecom)```
+To sign in to the Salesforce.com, use `rforcecom.login()` function
 
-##Step 2
+{% highlight r %}
+username <- "yourname@yourcompany.com"
+password <- "YourPasswordSECURITY_TOKEN"
+instanceURL <- "https://na14.salesforce.com/"
+apiVersion <- "26.0"
+(session <- rforcecom.login(username, password, instanceURL, apiVersion))
+{% endhighlight %}
 
-Login to Salesforce
-To sign in to the Salesforce.com, use rforcecom.login() function
+## Step 3: Query Salesforce
 
-```username <- "yourname@yourcompany.com"
-	password <- "YourPasswordSECURITY_TOKEN"
-	instanceURL <- "https://na14.salesforce.com/"
-	apiVersion <- "26.0"
-	(session <- rforcecom.login(username, password, instanceURL, apiVersion))```
+Make a query using Salesforce Query language (SOQL), not to be confused with the Socrata Query Language (SoQL)..
 
-##Step 3 
+{% highlight r %}
+soqlQuery <- "SELECT Id, Name, Phone FROM Account WHERE AnnualRevenue > 50000 LIMIT 5"
+rforcecom.query(session, soqlQuery)
+{% endhighlight %}
 
-Make a query using Salesforce Query language, also called SoQL..
-```soqlQuery <- "SELECT Id, Name, Phone FROM Account WHERE AnnualRevenue > 50000 LIMIT 5"
-	rforcecom.query(session, soqlQuery)```
+## Step 4: Identify Destination Dataset
 
-##Step 4 
+Ensure that you have a Socrata dataset with proper fields and proper datatypes to write to.  Capture the 4x4 ID for the dataset you want to publish to.  
 
-ensure that you have a Socrata dataset with proper fields and proper datatypes to write to.  Capture the 4x4 for the dataset you want to publish to.  
+## Step 5: Write to Your Dataset
 
-##Step 5
-```socrataEmail <- Sys.getenv("SOCRATA_EMAIL", "XXX@socrata.com")
-	socrataPassword <- Sys.getenv("SOCRATA_PASSWORD", "XXXXXXX")
-	datasetToAddToUrl <- "https://opendata.socrata.com/resource/evnp-32vr.json" 
-	write.socrata(table,datasetToAddToUrl,"UPSERT",socrataEmail,socrataPassword)
-	```
-For full documentation on Rforcecom please see http://rforcecom.plavox.info/
+{% highlight r %}
+socrataEmail <- Sys.getenv("SOCRATA_EMAIL", "XXX@socrata.com")
+socrataPassword <- Sys.getenv("SOCRATA_PASSWORD", "XXXXXXX")
+datasetToAddToUrl <- "https://opendata.socrata.com/resource/evnp-32vr.json" 
+write.socrata(table, datasetToAddToUrl, "UPSERT", socrataEmail, socrataPassword)
+{% endhighlight %}
+
+For full documentation on Rforcecom please see <http://rforcecom.plavox.info/>.
 
