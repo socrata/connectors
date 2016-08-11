@@ -2,7 +2,7 @@
 
 ## What It Does
 
-This is a simply Python script and CLI that crawls the package list of a target CKAN portal, extracts the metadata related to each package, transforms it into standard Socrata metadata, and then loads it into a new External Link dataset, which is visible on the Socrata catalog. Currently, it will return the top level of the package _without_ the additional resources associated with that package (if any).
+This is a simply Python script (CLI in development) that crawls the package list of a target CKAN portal, extracts the metadata related to each package, transforms it into standard Socrata metadata, and then loads it into a new External Link dataset, which is visible on the Socrata catalog. Currently, it will return the top level of the package _without_ the additional resources associated with that package (if any).
 
 Incuded in the metadata is:
 
