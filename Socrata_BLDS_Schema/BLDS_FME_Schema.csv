@@ -1,0 +1,62 @@
+Source_Attribute_Name,BLDS_Attribute,Data_Type,Description,Status
+,PermitNum,TEXT,Permit number,REQUIRED
+,Description,TEXT,Detailed description of work permitted,REQUIRED
+,AppliedDate,TEXT (YYYY-MM-DD),Date on which the permit was applied,REQUIRED
+,IssuedDate,TEXT (YYYY-MM-DD),Date on which the permit was issued,REQUIRED
+,CompletedDate,TEXT (YYYY-MM-DD),Date on which the permit was completed.,REQUIRED
+,StatusCurrent,TEXT,Raw values indicating current status of permit,REQUIRED
+,OriginalAddress1,TEXT,"Original property street address (line 1), as stored by the jurisdiction",REQUIRED
+,OriginalAddress2,TEXT,"Original property street address (line 2), as stored by the jurisdiction",REQUIRED
+,OriginalCity,TEXT,"Original property city, as stored by the jurisdiction",REQUIRED
+,OriginalState,TEXT,"Original property state, as stored by the jurisdiction",REQUIRED
+,OriginalZip,TEXT,"Original property zip code, as stored by the jurisdiction",REQUIRED
+,Jurisdiction,TEXT,Unique ID of jurisdiction,RECOMMENDED
+,PermitClass,TEXT,Raw values indicating property type (e.g. Commercial or Residential),RECOMMENDED
+,PermitClassMapped,TEXT,"PermitClass mapped to standardized values:-Residential (Single Family/Duplex)-Non-Residential (Commercial, Industrial, Institutional)",RECOMMENDED
+,StatusCurrentMapped,TEXT,"StatusCurrent mapped to standardized values:-Application Accepted-Fees/Payment-In Review-Permit Issued-Inspection Phase-Permit Finaled-Permit Finaled with Conditions-Occupancy-Appeal-Permit Cancelled",RECOMMENDED
+,WorkClass,TEXT,Raw values indicating whether a property is new or existing,RECOMMENDED
+,WorkClassMapped,TEXT,"WorkClass mapped to standardized values:-New-Existing",RECOMMENDED
+,PermitType,TEXT,Raw values indicating type of permit in abbreviated/shorthand format,RECOMMENDED
+,PermitTypeMapped,TEXT,"PermitType mapped to standardized values:-Building-Demolition-Electrical-Mechanical-Plumbing-Roof-Fence-Grading-Pool/Spa",RECOMMENDED
+,PermitTypeDesc,TEXT,Longer description of permit type,RECOMMENDED
+,StatusDate,TEXT (YYYY-MM-DD),Indicates the last time a permit was updated in the jurisdictionÍs database,RECOMMENDED
+,TotalSqFt,INTEGER,Total square footage relevant to the permit,RECOMMENDED
+,Link,TEXT,This field should provide a web URL to where the permit data is hosted online.4,RECOMMENDED
+,Latitude,NUMERIC,Latitude of property in decimal format using geographic coordinates,RECOMMENDED
+,Longitude,NUMERIC,Longitude of property in decimal format using geographic coordinates,RECOMMENDED
+,EstProjectCost,NUMERIC,Estimated value of the project.,RECOMMENDED
+,HousingUnits,INTEGER,Number of household units for a given building,RECOMMENDED
+,PIN,TEXT,"Primary unique identifier for a land parcel within a jurisdiction used for tax assessment purposes. The identifier may be colloquially referred to as assessor's ID, tax ID, parcel number, etc.",RECOMMENDED
+,ContractorCompanyName,TEXT,Primary company name of the contractor,RECOMMENDED
+,ContractorTrade,TEXT,Raw values indicating contractor trade,RECOMMENDED
+,ContractorTradeMapped,TEXT,"Trade mapped to standardized values:-General-Electrical-Mechanical-Plumbing-Architecture-Engineering-Masonry-Sign-Tent",RECOMMENDED
+,ContractorLicNum,TEXT,Contractor license number,RECOMMENDED
+,ContractorStateLic,TEXT,Indicates the state the contractor is licensed to,RECOMMENDED
+,ProposedUse,TEXT,Provides a description of the use of the property (land use or otherwise) for the permitted work,OPTIONAL
+,AddedSqFt,INTEGER,The square footage the project will add to property,OPTIONAL
+,RemovedSqFt,INTEGER,The square footage the project will remove from the property,OPTIONAL
+,MasterPermitNum,TEXT,Master Use Permit number,OPTIONAL
+,ExpiresDate,TEXT (YYYY-MM-DD),Date on which the permit will/would have expire(d),OPTIONAL
+,COIssuedDate,TEXT (YYYY-MM-DD),Date on which the related certificate of occupancy was issued,OPTIONAL
+,HoldDate,TEXT (YYYY-MM-DD),Date on which the permit was last put on hold,OPTIONAL
+,VoidDate,TEXT (YYYY-MM-DD),Date on which the permit was voided,OPTIONAL
+,ProjectName,TEXT,Name of the project related to the permit,OPTIONAL
+,ProjectID,TEXT,ID within the jurisdictionÍs database of the project related to the permit,OPTIONAL
+,TotalFinishedSqFt,TEXT,Total finished square footage relevant to the permit,OPTIONAL
+,TotalUnfinishedSqFt,TEXT,Total unfinished square footage relevant to the permit,OPTIONAL
+,TotalHeatedSqFt,TEXT,Total heated square footage relevant to the permit,OPTIONAL
+,TotalUnHeatedSqFt,TEXT,Total unheated square footage relevant to the permit,OPTIONAL
+,TotalAccSqFt,TEXT,Total accessory square footage relevant to the permit,OPTIONAL
+,TotalSprinkledSqFt,TEXT,Total sprinkled square footage relevant to the permit,OPTIONAL
+,ExtraFields,JSON,Source fields that could not logically map to one of the above fields.,OPTIONAL
+,Publisher,TEXT,"The name of the data publisher/authority (county, city)",OPTIONAL
+,Fee,INTEGER,The fee for the permit (in any currency),OPTIONAL
+,ContractorFullName,TEXT,Full name of the contractor (Individual or Company),OPTIONAL
+,ContractorCompanyDesc,TEXT,Company description,OPTIONAL
+,ContractorPhone,TEXT,Contractor phone number,OPTIONAL
+,ContractorAddress1,TEXT,Contractor street address line 1,OPTIONAL
+,ContractorAddress2,TEXT,Contractor street address line 2,OPTIONAL
+,ContractorCity,TEXT,Contractor city,OPTIONAL
+,ContractorState,TEXT,Contractor state,OPTIONAL
+,ContractorZip,TEXT,Contractor zip,OPTIONAL
+,ContractorEmail,TEXT,Contractor email address,OPTIONAL
